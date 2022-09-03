@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to the home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    <nav>
+    <nav class="container navbar">
         <!-- page logo -->
-        <div>
+        <div class="logo">
             <a href="http://localhost">Rechard</a>
-            <span class="status">span</span>
+            <div class="status"></div>
         </div>
         <!-- end page logo -->
 
         <!-- page links -->
         <div>
             <!-- command: ul>li*5>a{lin} -->
-            <ul>
+            <ul class="navbar-nav">
                 <!-- ctrl + / for comment -->
                 <li><a href="">Home</a></li>
                 <li><a href="">Works</a></li>
@@ -32,8 +37,14 @@
 
         <!-- sign/signup button -->
         <div>
-            <a href="">Let's Chart another</a>
+            <a href="" class="btn">Let's Chart</a>
         </div>
+
+        <a class="menu" href="javascript:void(0)">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </a>
         <!-- end sign/signin button -->
     </nav>
     <main>
@@ -43,7 +54,7 @@
             <div>
                 <h1>Hi! I Am <span>Ul/UX</span>Richard Brian</h1>
                 <p>Designing user interfaces for over 7 years as a product designer</p>
-                
+
                 <!-- call to action -->
                 <div>
                     <a href="">Hire Me</a>
@@ -56,7 +67,7 @@
                         <span>+84</span>
                         <span>Clients on work worldwide</span>
                     </div>
-                    <img src="/imgs/logo.png" alt="Portfolio Image">
+                    <img width="100" src="/imgs/logo.png" alt="Portfolio Image">
                 </div>
 
                 <div>
@@ -99,4 +110,5 @@
         </footer>
     </main>
 </body>
+
 </html>
